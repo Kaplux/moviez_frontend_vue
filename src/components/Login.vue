@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <v-flex xs12 sm4 offset-sm4>
+    <v-flex xs12 sm8 offset-sm2 md4 offset-md4>
         <v-card raised>
         <v-toolbar color="teal lighten-3" dark>
           <v-toolbar-title>Login</v-toolbar-title>
