@@ -15,7 +15,7 @@
                 label="Password"
                 v-model="password"
                 ></v-text-field>
-                <v-btn>
+                <v-btn  @click="login(email,password)">
                     submit
                 </v-btn>
             </v-form>
@@ -32,6 +32,11 @@ export default {
   data: () => ({
     email: '',
     password: ''
-  })
+  }),
+  methods: {
+    login (email, password) {
+      this.$store.commit('login', {email, password})
+    }
+  }
 }
 </script>
