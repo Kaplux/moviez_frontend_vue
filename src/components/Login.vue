@@ -14,6 +14,7 @@
                 <v-text-field
                 label="Password"
                 v-model="password"
+                type="password"
                 ></v-text-field>
                 <v-btn  @click="login(email,password)">
                     submit
